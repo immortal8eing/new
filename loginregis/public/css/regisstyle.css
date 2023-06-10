@@ -1,0 +1,102 @@
+*{ 
+    margin: 0; 
+    padding: 0; 
+    outline: 0; 
+    font-family: 'Open Sans', sans-serif; 
+   }
+  
+  body{ 
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: url(/img/2.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center; 
+  } 
+  
+  p { 
+    color: white; 
+    font-family: 'Open Sans', sans-serif; 
+    padding-top: 10px;
+  } 
+  
+  a { 
+    color: white; 
+    font-family: 'Open Sans', sans-serif; 
+  } 
+  
+  .container{ 
+    position: absolute; 
+    left: 52%; 
+    top: 50%; 
+    transform: translate(-50%,-50%); 
+    padding: 20px 25px; 
+    width: 300px; 
+    background-color: black; 
+    box-shadow: 0 0 10px gold; 
+  } 
+  .container h1{
+    text-align: left; 
+    color: gold; 
+    margin-bottom: 30px; 
+    text-transform: uppercase; 
+    border-bottom: 4px solid gold; 
+  } 
+  .container label{ 
+    text-align: left; 
+    color: gold; 
+  } 
+   
+  .container form input{ 
+    width: calc(100% - 20px); 
+    padding: 8px 10px; 
+    margin-bottom: 15px; 
+    border: none; 
+    background-color: transparent; 
+    border-bottom: 2px solid gold; 
+    color: white; 
+    font-size: 20px; 
+  } 
+  
+  .container form button{ 
+    color: gold;
+    width: 100%; 
+    padding: 5px 0; 
+    border: none;
+    border: 5px solid gold; 
+    background-color: black;
+    font-size: 18px; 
+  } 
+  .container form button:hover{
+    background: gold;
+    color: black;
+  }
+  .invalid-feedback{
+    margin-bottom: 15px; 
+    color: red;
+  }
+    
+  @media screen and (max-width: 900px) { 
+   .container { 
+     position: absolute; 
+     left: 50%; 
+     top: 50%; 
+     transform: translate(-50%, -50%); 
+     width: 50%; 
+     padding: 20px; 
+    } 
+  }
+   
+  @media screen and (max-width: 600px) { 
+    .container { 
+      position: absolute; 
+      left: 50%; 
+      top: 50%; 
+      transform: translate(-50%, -50%); 
+      width: 80%; 
+      padding: 20px; 
+    } 
+  }
